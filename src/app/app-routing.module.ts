@@ -11,7 +11,10 @@ const routes: Routes = [
   },
   {
     path:"",loadChildren:()=>import('./modules/nosotros/nosotros.module').then(m=>m.NosotrosModule)
-  }
+  },
+  {
+    path:"",loadChildren:()=>import('./modules/auth/auth.module').then(m=>m.AuthModule)
+  },
 ];
 
 @NgModule({
