@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TarjetaInicio } from 'src/app/models/modelos';
+import { Club, TarjetaInicio } from 'src/app/models/modelos';
 
 @Component({
   selector: 'app-inicio',
@@ -8,6 +8,7 @@ import { TarjetaInicio } from 'src/app/models/modelos';
 })
 export class InicioComponent {
   public info: TarjetaInicio[];
+  public infor: Club[]
 
   constructor(){
     this.info = [
@@ -16,6 +17,17 @@ export class InicioComponent {
         descripcion:"River Plate el mas grande",
         image:"https://pbs.twimg.com/media/FgC5lLcWQAgo04l.jpg",
         alt:"River Plate",
+      }
+    ],
+    this.infor = [
+      {
+        nombre:"River Plate",
+        año:1901,
+        escudo:"../assets/escudo.jpg",
+        titulosNac:52,
+        titulosInt:12,
+        
+
       }
     ]
   }
