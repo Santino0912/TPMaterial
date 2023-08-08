@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Club, TarjetaInicio } from 'src/app/models/modelos';
+import { Club } from 'src/app/models/club';
+import { TarjetaInicio } from 'src/app/models/modelos';
 
 @Component({
   selector: 'app-inicio',
