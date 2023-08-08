@@ -1,7 +1,7 @@
 export interface Club {
    
         nombre: string;
-        año:number;
+        anio:number;
         escudo:string;
         titulosNac:number;
         titulosInt:number;

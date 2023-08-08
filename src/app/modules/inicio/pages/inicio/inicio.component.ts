@@ -25,7 +25,7 @@ export class InicioComponent {
     this.infor = [
       {
         nombre:"River Plate",
-        año:1901,
+        anio:1901,
         escudo:"../assets/escudo.jpg",
         titulosNac:52,
         titulosInt:12,
