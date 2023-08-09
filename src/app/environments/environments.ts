@@ -9,4 +9,6 @@ export const environments= {
         appId: "1:925382358121:web:ebef332a16e524cae75ef8",
         measurementId: "G-FNZS75LRE7"
       }
+      // config de firebase en nuestra app web
+      
 }
