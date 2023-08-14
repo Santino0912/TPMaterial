@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../services/auth.service';
 
 
 @Component({
@@ -8,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class RegisterComponent {
   hide = true;
+
+  constructor(public servicioAuth:AuthService){
+    
+  }
 }
