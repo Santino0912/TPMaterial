@@ -12,4 +12,18 @@ export class AuthService {
     registrar(nombre:string,contrasena:string){
      return this.auth.createUserWithEmailAndPassword(nombre,contrasena)
    }
+
+
+   async getUid(){
+    // nos genera una promesa, y cons user la captura
+    const user = await this.auth.currentUser;
+
+    if(user==null){
+      return null
+    }else{
+      return user.uid
+    }
+
+
+   }
 }
