@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { Usuario } from '../../../models/usuario'
+import { FirestoreService } from 'src/app/shared/services/firestore.service';
 
 
 @Component({
@@ -18,7 +19,7 @@ export class RegisterComponent {
   }
   uid='';
 
-  constructor(public servicioAuth:AuthService){
+  constructor(public servicioAuth:AuthService, public firestore: FirestoreService){
 
   }
   //tomamos nuevos registros y mostrar los resultados
