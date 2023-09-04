@@ -17,7 +17,8 @@ export class RegisterComponent {
     nombre:'',
     uid:'',
     email:'',
-    contrasena:''
+    contrasena:'',
+    rol:''
   }
   uid='';
   coleccionUsuario:Usuario[]=[]
