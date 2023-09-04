@@ -28,10 +28,10 @@ export class RegisterComponent {
   //tomamos nuevos registros y mostrar los resultados
   async registrarse(){
     const credenciales = {
-      nombre: this.usuarios.nombre,
+      email: this.usuarios.email,
       contrasena: this.usuarios.contrasena,
     }
-   const res = await this.servicioAuth.registrar(credenciales.nombre,credenciales.contrasena)
+   const res = await this.servicioAuth.registrar(credenciales.email,credenciales.contrasena)
    .then(res =>{
     alert("Ha agregado un nuevo usuario con exito")
    })
