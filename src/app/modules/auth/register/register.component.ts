@@ -14,8 +14,9 @@ export class RegisterComponent {
   hide = true;
 
   usuarios: Usuario= {
-    uid:'',
     nombre:'',
+    uid:'',
+    email:'',
     contrasena:''
   }
   uid='';

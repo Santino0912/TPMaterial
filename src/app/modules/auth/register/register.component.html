@@ -4,9 +4,14 @@
         <h1>Registrarse</h1>
         <i class="material-icons" style="font-size: 200px;">person</i>
         
+        <mat-form-field appearance="fill">
+          <mat-label>Ingrese un nombre de usuario</mat-label>
+          <input [(ngModel)]="usuarios.nombre" matInput required type="text" >
+        </mat-form-field>
+
             <mat-form-field appearance="fill">
-              <mat-label>Ingrese usuario</mat-label>
-              <input [(ngModel)]="usuarios.nombre" matInput required type="text" >
+              <mat-label>Ingrese un email</mat-label>
+              <input [(ngModel)]="usuarios.email" matInput required type="text" >
             </mat-form-field>
          
             <mat-form-field>
